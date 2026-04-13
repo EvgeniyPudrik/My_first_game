@@ -8,17 +8,22 @@
 </head>
 <body>
 <main>
-
-  <audio class="mainSound" src="sounds/watrfallkero-lofi-beat-chill-7373.mp3" loop controls></audio>
-  <h1 id="main">Вітаю у грі "РОЗУМНИК"</h1>
+  <audio id="mainSound" src="audio/universfield-melancholy-background-165921.mp3"></audio>
+  <audio id="dogSound" src="audio/dragon-studio-free-dog-bark-419014.mp3"></audio>
+  <audio id="buttonSound" src="audio/universfield-cartoon-blinking-487897.mp3"></audio>
+  <audio id="winnSound" src="audio/floraphonic-marimba-win-b-3-209679.mp3"></audio>
+  <audio id="wrongLetter" src="audio/universfield-marimba-lose-250960.mp3"></audio>
+  <audio id="loseSound" src="audio/make_more_sound-8-bit-video-game-lose-sound-version-1-145828.mp3"></audio>
+  <audio id="congratulation" src="audio/yoursperfectguy-congratulations-message-notification-sound-sfx-1-334724.mp3"></audio>
+  <h1 id="main">Вітаю у грі "РОЗУМНИК" 🤓</h1>
   <section>
     <img src="https://media.istockphoto.com/id/2220413076/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D1%80%D0%B0%D1%81%D0%B0-%D0%B7%D0%B5%D0%BC%D0%BB%D1%96-%D0%B7-%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D1%81%D1%83-%D0%B7-%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D0%BB%D0%BE%D0%BC%D1%88%D0%BB%D0%B8%D0%B2%D0%B8%D0%BC%D0%B8-%D0%B2%D1%96%D0%B7%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BC%D0%B8-%D0%B5%D1%84%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8-%D0%BB%D0%B0%D0%BD%D0%B4%D1%88%D0%B0%D1%84%D1%82%D1%96%D0%B2-%D1%96-%D0%BE%D1%81%D0%BE%D0%B1%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9-%D0%BD%D0%B0%D1%88%D0%BE%D1%97.jpg?s=2048x2048&w=is&k=20&c=sujg8CPeQcdJw3iZ0LKLXdOhekp_iRolb6Ji4R135YQ=" alt="planet">
     <img id="image" src="https://media.istockphoto.com/id/667786852/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0-%D0%B7-%D0%BE%D0%BB%D1%96%D0%B2%D1%86%D0%B5%D0%BC-%D0%B2-%D0%BE%D1%84%D1%96%D1%81%D1%96.jpg?s=2048x2048&w=is&k=20&c=MRu7ZxSR6bxy0INa21Tvj-9zIzhBJlFZHkt9MOktBxw=" alt="Smart Animal">
     <img src="https://media.istockphoto.com/id/1394287943/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F-%D1%87%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%BE%D1%97-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B8-%D0%BC%D0%B0%D1%80%D1%81-%D0%B4%D0%BE%D1%81%D0%BB%D1%96%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D1%82%D0%B0-%D0%B5%D0%BA%D1%81%D0%BF%D0%B5%D0%B4%D0%B8%D1%86%D1%96%D1%8F-%D0%BD%D0%B0-%D1%87%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D1%83-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D1%83-%D0%B5%D0%BA%D1%81%D0%BF%D0%B5%D0%B4%D0%B8%D1%86%D1%96%D1%8F.jpg?s=2048x2048&w=is&k=20&c=s1D3JkGL9cKJq_laeQ5aTlw0ubnlv7UXufWcNBXSkTQ=" alt="planet">
   </section>
-  <!-- Скачати мелодії за посиланнями -->
-  <audio id="dogSound" src="https://freesound.org/s/478109/"></audio>
+  <button id="startGame">▶ Почати гру</button>
   <section class="middle">
+    <h3>Тут відображатиметься твоє запитання:</h3>
     <div id="question" class="question"></div>
   </section>
   <section class="inputText">
@@ -26,8 +31,15 @@
     <input type="text" id="text">
     <button id="button">Перевірити</button>
   </section>
+  <section class="timerLives">
+    <h3>Залишилось життів:</h3>
+    <div id="lives"></div>
+    <div id="timer">Залишилось часу:</div>
+  </section>
   <section>
     <div id="result" class="result"></div>
+  </section>
+  <section>
   </section>
 </main>
 <script src="https://code.jquery.com/jquery-2.1.0.js"></script>

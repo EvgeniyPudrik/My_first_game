@@ -14,8 +14,8 @@ main {
 h1{
   text-align: center;
   color: white;
-  font-size: 4rem;
-  padding: 10px;
+  font-size: 2rem;
+  padding: 5px;
   font-style: italic;
   font-family: fantasy;
   height: fit-content;
@@ -25,8 +25,6 @@ h1{
   box-shadow: 5px 5px 5px 5px darkslateblue, 5px 5px 5px 5px darkslateblue;
   animation: slide 2s infinite;
 }
-
-
 @keyframes slide {
   0% {
     transform: translateY(0%);
@@ -38,14 +36,31 @@ h1{
     transform: translateY(0%);
   }
 }
-
+.timerLives {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 1200px;
+  margin: 5px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 5px 5px 25px 5px black;
+  color: orangered;
+  font-style: italic;
+  font-family: "Sitka Banner", sans-serif;
+  font-weight: bold;
+  font-size:2rem;
+}
 img {
   max-width: 200px;
   height: auto;
   border-radius: 50%;
   border: 20px solid seagreen;
   transition: 0.2s ease;
-  margin: 20px;
+  margin: 5px;
 }
 
 img:hover {
@@ -55,16 +70,16 @@ img:hover {
   cursor: pointer;
 }
 
-.question {
+h3 {
   text-align: center;
-  color: orangered;
-  font-size: 2rem;
-  font-weight: bold;
+  color: blue;
+  font-family: "Bauhaus 93", cursive;
+  font-size: 1.2rem;
 }
 
 .middle {
   width: 90%;
-  margin: 20px;
+  margin: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,13 +92,13 @@ img:hover {
 }
 .inputText {
   width: 50%;
-  margin: 20px;
+  margin: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   box-shadow: 5px 5px 25px 5px black;
@@ -119,9 +134,34 @@ button:hover {
 button:active {
   transform: scale(1.01);
 }
+.question {
+  text-align: center;
+  color: coral;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 .result {
   width: 400px;
-  margin: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 5px 5px 25px 5px black;
+  color: orangered;
+  font-style: italic;
+  font-family: "Sitka Banner", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+#lives {
+  width: 400px;
+  margin: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,5 +175,5 @@ button:active {
   font-style: italic;
   font-family: "Sitka Banner", sans-serif;
   font-weight: bold;
-  font-size: 4rem;
+  font-size:1rem;
 }
