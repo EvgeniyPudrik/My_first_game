@@ -132,6 +132,7 @@ button.addEventListener("click", function () {
 
   if (!found) {
     wrongLetter.play();
+    alert("Такої букви тут немає 😕")
     livesLeft.pop();
     lives.innerHTML = livesLeft.join(" ");
   }

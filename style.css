@@ -42,7 +42,8 @@ h1{
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 5px;
   padding: 30px;
   background: rgba(255, 255, 255, 0.5);
@@ -176,4 +177,18 @@ button:active {
   font-family: "Sitka Banner", sans-serif;
   font-weight: bold;
   font-size:1rem;
+}
+
+@media (max-width: 600px) {
+
+  .timerLives {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    font-family: Algerian, cursive;
+    font-size: 1rem;
+
+  }
 }
