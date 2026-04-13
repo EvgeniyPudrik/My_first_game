@@ -186,7 +186,8 @@ button:active {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
     font-family: Algerian, cursive;
     font-size: 1rem;
 
